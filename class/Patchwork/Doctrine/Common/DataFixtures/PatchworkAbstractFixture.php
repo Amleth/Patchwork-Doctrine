@@ -39,10 +39,11 @@ abstract class PatchworkAbstractFixture extends AbstractFixture
 
     public function addRelationship($entity, $field, $reference)
     {
-        $this->relationshipsRepository[] = array (
+        $this->relationshipsRepository[] = array(
             'entity' => $entity,
-            'field'  => $field,
-            'ref'    => $reference);
+            'field' => $field,
+            'ref' => $reference
+        );
     }
 
     public function setFKC($check)
